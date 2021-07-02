@@ -1,0 +1,72 @@
+:root {
+    background-color: #F7b733;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Lustria', serif;
+}
+
+p {
+    text-align: center;
+}
+
+.boton {
+    padding: 0.5em;
+    text-align: center;
+    display: inline;
+    font-size: 24px;
+    margin: 2px;
+    border-radius: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    background: linear-gradient(180deg, #FC4A1A 0%, #FC861A 100%);
+}
+
+ :hover .boton {
+    background: linear-gradient(180deg, #FC1A86 0%, #F7b733 100%);
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    align-items: center;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    text-align: center;
+    background-color: #4ABDAC;
+    padding: 3em;
+    justify-content: center;
+}
+
+@media(min-width:40rem) {
+    .input {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-footer {
+    width: 194.44px;
+    height: 25px;
+}

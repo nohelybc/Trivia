@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lustria&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <h1 id="titulo"> ¡Hola! ¿Como te llamas? :) </h1>
+    <section class="input">
+        <div id="presentacion" class="items">
+            <form>
+                <label for="nombre-ej"> </label>
+                <input type="nombre" id="nombre" placeholder="Tu nombre va aquí" name="Nombre" required size="25" />
+            </form>
+            <button type="button" class="boton" onclick="reemplazar()"> Aceptar </button>
+
+        </div>
+
+        <div id="seleccionaCategoria" style=display:none class="items">
+            <p>Selecciona la categoria que quieras jugar</p>
+            <input type="radio" id="r1" name="categoria" value="r1"> Cine
+            <br/>
+            <input type="radio" id="r2" name="categoria" value="r2"> Turismo
+            <br/>
+            <button type="button" class="boton" onclick="seleccionaCategoria()"> Aceptar </button>
+        </div>
+
+        <div id="preguntas" style="display:none" class="items">
+            <form id="misPreguntas">
+
+                <p id="pregunta"></p>
+                <input type="radio" id="respuestaRadioUno" name="opciones">
+                <label id="respuestaUno" for="respuestaRadioUno"></label><br>
+                <input type="radio" id="respuestaRadioDos" name="opciones">
+                <label id="respuestaDos" for="respuestaRadioDos"></label><br>
+                <input type="radio" id="respuestaRadioTres" name="opciones">
+                <label id="respuestaTres" for="respuestaRadioTres"></label><br>
+                <input type="radio" id="respuestaRadioCuatro" name="opciones">
+                <label id="respuestaCuatro" for="respuestaRadioCuatro"></label><br>
+            </form>
+            <button type="button" class="boton" onclick="siguientePregunta()"> Siguiente </button>
+        </div>
+
+        <div id="resultados" style="display:none" class="items">
+            <p><strong>Has finalizado, tu puntuacion es:</strong></p>
+            <p id="resultado"></p>
+            <button type="button" class="boton" onclick="reiniciarJuego()">Volver a jugar</button>
+
+
+        </div>
+        <img src="assets/quiz.png">
+    </section>
+
+    <footer> <br> <img src="assets/Laboratoria_logo.png" class="img-footer">
+        <br></footer>
+    <footer>2021, dupla 9.1 </footer>
+</body>
+
+</html>
