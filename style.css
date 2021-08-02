@@ -27,7 +27,7 @@ p {
     background: linear-gradient(180deg, #FC4A1A 0%, #FC861A 100%);
 }
 
- :hover .boton {
+:hover .boton {
     background: linear-gradient(180deg, #FC1A86 0%, #F7b733 100%);
 }
 
